@@ -204,7 +204,10 @@ def short_summary(value: str, limit: int = 150) -> str:
 
 
 def badge(label: str, value: str, color: str) -> str:
-    return f'<img alt="{label}: {value}" src="https://img.shields.io/badge/{quote(label, safe="")}-{quote(value, safe="")}-{color}">'
+    def segment(text: str) -> str:
+        return quote(text.replace("_", "__").replace("-", "--"), safe="")
+
+    return f'<img alt="{label}: {value}" src="https://img.shields.io/badge/{segment(label)}-{segment(value)}-{color}">'
 
 
 def render_category(item_group: list[dict], language: str) -> str:

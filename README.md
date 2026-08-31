@@ -2,7 +2,7 @@
 
 <p align="center"><strong>由可验证 Shadow 评分自动生成的量化 Skill 与 Agent 精选</strong></p>
 
-<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-08-31" src="https://img.shields.io/badge/updated-2026-08-31-334155"></p>
+<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-08-31" src="https://img.shields.io/badge/updated-2026--08--31-334155"></p>
 
 <p align="center"><a href="README.en.md">English</a> · <a href="https://www.quantskills.ai/">Quantskills 官网</a> · <a href="https://github.com/quantskills/registry">完整 Registry</a> · <a href="data/awesome-quantskills.json">AI 数据</a></p>
 

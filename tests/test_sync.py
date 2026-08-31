@@ -116,6 +116,7 @@ class SyncTests(unittest.TestCase):
         readme = render_readme(collection, language="zh")
 
         self.assertIn("https://www.quantskills.ai/", readme)
+        self.assertIn("updated-2026--08--31-334155", readme)
         self.assertIn("\n- [03 市场与标的分析](#category-03) · 1 项\n", readme)
         self.assertIn("\n- [04 风险监控与预警](#category-04) · 1 项\n", readme)
         self.assertIn("项目 | 类型 | Core | B / Q / T | 组内排名 | 简介", readme)
