@@ -203,14 +203,6 @@ def short_summary(value: str, limit: int = 150) -> str:
     return value if len(value) <= limit else value[: limit - 1].rstrip() + "…"
 
 
-def featured_label(item: dict, language: str) -> str:
-    if item["featured_status"] == "eligible":
-        return f'{item["featured_score"]:.2f}'
-    if item["featured_status"] == "not_applicable":
-        return "不适用" if language == "zh" else "N/A"
-    return "不合格" if language == "zh" else "Ineligible"
-
-
 def badge(label: str, value: str, color: str) -> str:
     return f'<img alt="{label}: {value}" src="https://img.shields.io/badge/{quote(label, safe="")}-{quote(value, safe="")}-{color}">'
 
@@ -219,11 +211,11 @@ def render_category(item_group: list[dict], language: str) -> str:
     first = item_group[0]
     title = first["category_zh"] if language == "zh" else first["category_en"]
     if language == "zh":
-        header = "项目 | 类型 | Core | B / Q / T | Featured | 组内排名 | 简介"
-        divider = "--- | --- | ---: | --- | ---: | ---: | ---"
+        header = "项目 | 类型 | Core | B / Q / T | 组内排名 | 简介"
+        divider = "--- | --- | ---: | --- | ---: | ---"
     else:
-        header = "Project | Type | Core | B / Q / T | Featured | Group rank | Summary"
-        divider = "--- | --- | ---: | --- | ---: | ---: | ---"
+        header = "Project | Type | Core | B / Q / T | Group rank | Summary"
+        divider = "--- | --- | ---: | --- | ---: | ---"
     lines = [f'<a id="category-{first["category"]}"></a>', "", f"### {first['category']} · {title}", "", header, divider]
     for item in item_group:
         summary = short_summary(item["summary_zh"] if language == "zh" else item["summary_en"])
@@ -231,7 +223,7 @@ def render_category(item_group: list[dict], language: str) -> str:
         lines.append(
             f'[{item["asset_id"]}]({item["url"]}) | {kind} | **{item["core"]:.2f}** | '
             f'{item["behavior"]:.2f} / {item["quality"]:.2f} / {item["token"]:.2f} | '
-            f'{featured_label(item, language)} | {item["rank"]}/{item["group_size"]} | {summary}'
+            f'{item["rank"]}/{item["group_size"]} | {summary}'
         )
     return "\n".join(lines)
 
@@ -242,8 +234,9 @@ def render_readme(collection: dict, language: str = "zh") -> str:
     groups: dict[str, list[dict]] = {}
     for item in items:
         groups.setdefault(item["category"], []).append(item)
-    nav = " · ".join(
-        f'[{category} {group[0]["category_zh" if zh else "category_en"]}](#category-{category})'
+    nav = "\n".join(
+        f'- [{category} {group[0]["category_zh" if zh else "category_en"]}](#category-{category})'
+        f' · {len(group)} {"项" if zh else ("item" if len(group) == 1 else "items")}'
         for category, group in groups.items()
     )
     title = "由可验证 Shadow 评分自动生成的量化 Skill 与 Agent 精选" if zh else "A verified Shadow-scored selection of quantitative Skills and Agents"
@@ -276,7 +269,7 @@ def render_readme(collection: dict, language: str = "zh") -> str:
 
 <p align="center">{badges}</p>
 
-<p align="center">{language_link} · <a href="https://quantskills.github.io/quantskills/?view=recommended">精选网页</a> · <a href="https://github.com/quantskills/registry">完整 Registry</a> · <a href="data/awesome-quantskills.json">AI 数据</a></p>
+<p align="center">{language_link} · <a href="https://www.quantskills.ai/">Quantskills 官网</a> · <a href="https://github.com/quantskills/registry">完整 Registry</a> · <a href="data/awesome-quantskills.json">AI 数据</a></p>
 
 > [!IMPORTANT]
 > {important}
@@ -307,7 +300,11 @@ flowchart LR
 
 ## 精选目录
 
-评分列：`B` 行为表现 · `Q` 产出质量 · `T` Token 效率。Featured 是附加能力评价，不计入 Core。
+**评分速读**
+
+- `Core = 50% B + 25% Q + 25% T`，满分 100，越高越好。
+- `B` 是行为表现，`Q` 是产出质量，`T` 是 Token 效率。
+- “组内排名”只在同类型、同一级分类内比较；不同分类不直接横向排名。
 
 {category_sections}
 
@@ -346,7 +343,7 @@ Featured 只作附加评价。说明组内排名、来源 publication 和 Shadow
 
 <p align="center">{badges}</p>
 
-<p align="center">{language_link} · <a href="https://quantskills.github.io/quantskills/?view=recommended">Web view</a> · <a href="https://github.com/quantskills/registry">Full Registry</a> · <a href="data/awesome-quantskills.json">AI data</a></p>
+<p align="center">{language_link} · <a href="https://www.quantskills.ai/">Quantskills website</a> · <a href="https://github.com/quantskills/registry">Full Registry</a> · <a href="data/awesome-quantskills.json">AI data</a></p>
 
 > [!IMPORTANT]
 > {important}
@@ -377,7 +374,11 @@ flowchart LR
 
 ## Selected projects
 
-Score legend: `B` behavior · `Q` output quality · `T` token efficiency. Featured is supplemental and does not affect Core.
+**Score guide**
+
+- `Core = 50% B + 25% Q + 25% T`, on a 0–100 scale where higher is better.
+- `B` is behavior, `Q` is output quality, and `T` is token efficiency.
+- Group rank compares only projects of the same type and top-level category; ranks are not directly comparable across categories.
 
 {category_sections}
 
