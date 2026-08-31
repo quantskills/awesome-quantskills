@@ -102,6 +102,25 @@ class SyncTests(unittest.TestCase):
         self.assertIn("不构成投资建议", readme)
         self.assertIn("前 25%", readme)
 
+    def test_readme_uses_readable_navigation_and_compact_project_table(self):
+        collection = build_collection(self.manifest, self.current, self.recommended, self.policy, self.catalog)
+        second = dict(collection["items"][0])
+        second.update({
+            "asset_id": "skill-risk-example",
+            "category": "04",
+            "category_zh": "风险监控与预警",
+            "category_en": "Risk Monitoring & Alerts",
+        })
+        collection["items"].append(second)
+
+        readme = render_readme(collection, language="zh")
+
+        self.assertIn("https://www.quantskills.ai/", readme)
+        self.assertIn("\n- [03 市场与标的分析](#category-03) · 1 项\n", readme)
+        self.assertIn("\n- [04 风险监控与预警](#category-04) · 1 项\n", readme)
+        self.assertIn("项目 | 类型 | Core | B / Q / T | 组内排名 | 简介", readme)
+        self.assertNotIn("项目 | 类型 | Core | B / Q / T | Featured", readme)
+
 
 if __name__ == "__main__":
     unittest.main()
