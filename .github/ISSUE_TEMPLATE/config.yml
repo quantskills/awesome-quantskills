@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Registry submission and scoring
+    url: https://github.com/quantskills/registry
+    about: Asset admission, scoring, classification, and source metadata are maintained upstream.
+

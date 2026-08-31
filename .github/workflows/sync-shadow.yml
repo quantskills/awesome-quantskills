@@ -1,0 +1,54 @@
+name: Sync Shadow selection
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: shadow-selection-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate from verified Registry sources
+        run: python scripts/sync.py
+      - name: Verify generated collection
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/verify.py
+      - name: Open or update synchronization pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "Shadow selection is current."
+            exit 0
+          fi
+          branch="automation/shadow-selection-sync"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$branch"
+          git add README.md README.en.md data/awesome-quantskills.json
+          git commit -m "data: sync Shadow selection"
+          git fetch origin "$branch" || true
+          git push --force-with-lease origin "HEAD:$branch"
+          if gh pr list --head "$branch" --state open --json number --jq 'length' | grep -q '^0$'; then
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "Sync Shadow selection" \
+              --body "Automated, verified refresh from the public Quantskills Registry Shadow snapshot."
+          fi
+

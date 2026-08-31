@@ -1,0 +1,28 @@
+name: Public data discrepancy
+description: Report a mismatch between this collection and the public Registry snapshot.
+title: "[Data] "
+labels: [data]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private evaluation records, full signed envelopes, or non-public security findings.
+  - type: input
+    id: asset
+    attributes:
+      label: Asset ID
+      placeholder: skill-example
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: Observed discrepancy
+      description: State the public value, expected public value, and relevant digest.
+    validations:
+      required: true
