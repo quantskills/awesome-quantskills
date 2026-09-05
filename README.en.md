@@ -2,14 +2,14 @@
 
 <p align="center"><strong>A verified Shadow-scored selection of quantitative Skills and Agents</strong></p>
 
-<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-08-31" src="https://img.shields.io/badge/updated-2026--08--31-334155"></p>
+<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-09-01" src="https://img.shields.io/badge/updated-2026--09--01-334155"></p>
 
 <p align="center"><a href="README.md">中文</a> · <a href="https://www.quantskills.ai/">Quantskills website</a> · <a href="https://github.com/quantskills/registry">Full Registry</a> · <a href="data/awesome-quantskills.json">AI data</a></p>
 
 > [!IMPORTANT]
 > This repository is a research-only **Shadow selection view**. It does not change Registry admission, imply certification, or constitute investment advice.
 
-**28** selected · **25** Skills · **3** Agents · **10** categories. Current snapshot: `sha256:276e68899f6db4a7570a1b13cd84231f94987469343002522270686e52e87091`.
+**28** selected · **25** Skills · **3** Agents · **10** categories. Current snapshot: `sha256:829968af695eff8d2317cac23dec3962046c0acd0ea5c57e332bf46e29725a11`.
 
 ## Quick navigation
 
@@ -73,16 +73,16 @@ Project | Type | Core | B / Q / T | Group rank | Summary
 
 Project | Type | Core | B / Q / T | Group rank | Summary
 --- | --- | ---: | --- | ---: | ---
-[skill-buffett-moat-screener](https://github.com/quantskills/skill-buffett-moat-screener) | Skill | **82.08** | 99.18 / 91.88 / 38.07 | 1/38 | Screens A-share and US companies using moat, valuation, and point-in-time data for research records.
-[skill-ag-futures-seasonality](https://github.com/quantskills/skill-ag-futures-seasonality) | Skill | **80.73** | 98.48 / 86.88 / 39.08 | 2/38 | Computes monthly agricultural-futures seasonality from daily prices and overlays crop-calendar context.
-[skill-futures-hedgecraft](https://github.com/quantskills/skill-futures-hedgecraft) | Skill | **79.70** | 99.82 / 80.62 / 38.55 | 3/38 | 当需要设计、审查或排错期货对冲、期货仓位 sizing、合约移仓、基差/carry 分析、日历价差、保证金压力测试或 CTA 风格期货配置时，使用此 skill。适用于股指期货、商品期货、利率期货和跨期价差场景，重点处理合约乘数、名义本金、保证金、期限结构、交割规则和压力损失。
-[skill-buffett-moat-screener--lavineversion](https://github.com/quantskills/skill-buffett-moat-screener--lavineversion) | Skill | **79.36** | 99.58 / 77.50 / 40.78 | 4/38 | PandaData-only point-in-time Buffett moat hard screener for A-shares.
-[skill-post-market-screener](https://github.com/quantskills/skill-post-market-screener) | Skill | **79.11** | 98.37 / 80.00 / 39.72 | 5/38 | Screens A-share stocks after market close using technical patterns and capital-flow evidence.
-[skill-global-commodity-term-structure](https://github.com/quantskills/skill-global-commodity-term-structure) | Skill | **79.03** | 99.76 / 76.25 / 40.37 | 6/38 | Uses public data to study global commodity-futures term structure, roll yield, and spreads.
-[skill-stock-memory-analyzer-usa](https://github.com/quantskills/skill-stock-memory-analyzer-usa) | Skill | **78.78** | 98.79 / 78.12 / 39.41 | 7/38 | Performs multidimensional research analysis of US memory-chip stocks.
-[skill-hk-us-consensus-revision-radar](https://github.com/quantskills/skill-hk-us-consensus-revision-radar) | Skill | **78.72** | 99.56 / 73.75 / 42.01 | 8/38 | Organizes cross-period HK/US target-price and rating revisions into a research report.
-[skill-option-strategy-builder](https://github.com/quantskills/skill-option-strategy-builder) | Skill | **78.49** | 98.44 / 78.12 / 38.97 | 9/38 | Builds option strategies with legs, payoff charts, breakevens, Greeks, and margin analysis.
-[skill-index-rebalance-event-study](https://github.com/quantskills/skill-index-rebalance-event-study) | Skill | **78.35** | 98.28 / 78.12 / 38.70 | 10/38 | Runs reproducible event studies for index additions, deletions, and weight changes.
+[skill-buffett-moat-screener](https://github.com/quantskills/skill-buffett-moat-screener) | Skill | **82.08** | 99.18 / 91.88 / 38.07 | 1/37 | Screens A-share and US companies using moat, valuation, and point-in-time data for research records.
+[skill-ag-futures-seasonality](https://github.com/quantskills/skill-ag-futures-seasonality) | Skill | **80.73** | 98.48 / 86.88 / 39.08 | 2/37 | Computes monthly agricultural-futures seasonality from daily prices and overlays crop-calendar context.
+[skill-futures-hedgecraft](https://github.com/quantskills/skill-futures-hedgecraft) | Skill | **79.70** | 99.82 / 80.62 / 38.55 | 3/37 | 当需要设计、审查或排错期货对冲、期货仓位 sizing、合约移仓、基差/carry 分析、日历价差、保证金压力测试或 CTA 风格期货配置时，使用此 skill。适用于股指期货、商品期货、利率期货和跨期价差场景，重点处理合约乘数、名义本金、保证金、期限结构、交割规则和压力损失。
+[skill-post-market-screener](https://github.com/quantskills/skill-post-market-screener) | Skill | **79.11** | 98.37 / 80.00 / 39.72 | 4/37 | Screens A-share stocks after market close using technical patterns and capital-flow evidence.
+[skill-global-commodity-term-structure](https://github.com/quantskills/skill-global-commodity-term-structure) | Skill | **79.03** | 99.76 / 76.25 / 40.37 | 5/37 | Uses public data to study global commodity-futures term structure, roll yield, and spreads.
+[skill-stock-memory-analyzer-usa](https://github.com/quantskills/skill-stock-memory-analyzer-usa) | Skill | **78.78** | 98.79 / 78.12 / 39.41 | 6/37 | Performs multidimensional research analysis of US memory-chip stocks.
+[skill-hk-us-consensus-revision-radar](https://github.com/quantskills/skill-hk-us-consensus-revision-radar) | Skill | **78.72** | 99.56 / 73.75 / 42.01 | 7/37 | Organizes cross-period HK/US target-price and rating revisions into a research report.
+[skill-option-strategy-builder](https://github.com/quantskills/skill-option-strategy-builder) | Skill | **78.49** | 98.44 / 78.12 / 38.97 | 8/37 | Builds option strategies with legs, payoff charts, breakevens, Greeks, and margin analysis.
+[skill-index-rebalance-event-study](https://github.com/quantskills/skill-index-rebalance-event-study) | Skill | **78.35** | 98.28 / 78.12 / 38.70 | 9/37 | Runs reproducible event studies for index additions, deletions, and weight changes.
+[skill-etf-fund-evaluator](https://github.com/quantskills/skill-etf-fund-evaluator) | Skill | **78.30** | 98.64 / 75.62 / 40.30 | 10/37 | Evaluates domestic non-QDII passive equity-index ETFs and comparable-index peers.
 
 <a id="category-04"></a>
 
@@ -119,7 +119,7 @@ Project | Type | Core | B / Q / T | Group rank | Summary
 
 Project | Type | Core | B / Q / T | Group rank | Summary
 --- | --- | ---: | --- | ---: | ---
-[skill-backtest-assumption_check](https://github.com/quantskills/skill-backtest-assumption_check) | Skill | **79.74** | 97.07 / 85.62 / 39.19 | 1/4 | Use when an agent needs to independently audit the assumptions and biases behind a backtest / strategy code / research backtest report — execution ti…
+[skill-backtesting-bias-avoidance](https://github.com/quantskills/skill-backtesting-bias-avoidance) | Skill | **74.23** | 91.86 / 75.62 / 37.57 | 1/3 | Builds look-ahead-safe backtests and audits leakage, survivorship, overfitting, costs, and out-of-sample checks.
 
 <a id="category-08"></a>
 
@@ -163,7 +163,7 @@ source publication, and Shadow limitations. Do not provide investment advice.
 
 - Authoritative source: [`quantskills/registry/evaluations`](https://github.com/quantskills/registry/tree/main/evaluations)
 - Selection policy: `shadow-category-quartile.v1`
-- Public evaluation snapshot digest: `53178a1362d5946361a73ad5c2384655106a7c93544e6164369ac735299693c0`
+- Public evaluation snapshot digest: `11555a32bfb812a534918c8a33d72cf22d00cff369bd4ddc6cc7508c03677f97`
 - Selection policy digest: `c7d2ba0470739c5319ca4011fa2abb8739551fe01beae2113365a3f26ef5f4e2`
 - This repository stores only public redacted fields, never credentials, full signed envelopes, model traces, or detailed security findings.
 

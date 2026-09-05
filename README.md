@@ -2,14 +2,14 @@
 
 <p align="center"><strong>由可验证 Shadow 评分自动生成的量化 Skill 与 Agent 精选</strong></p>
 
-<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-08-31" src="https://img.shields.io/badge/updated-2026--08--31-334155"></p>
+<p align="center"><img alt="Awesome" src="https://awesome.re/badge-flat.svg"> <img alt="selected: 28" src="https://img.shields.io/badge/selected-28-0f766e"> <img alt="policy: category top 25%" src="https://img.shields.io/badge/policy-category%20top%2025%25-2563eb"> <img alt="mode: Shadow" src="https://img.shields.io/badge/mode-Shadow-64748b"> <img alt="updated: 2026-09-01" src="https://img.shields.io/badge/updated-2026--09--01-334155"></p>
 
 <p align="center"><a href="README.en.md">English</a> · <a href="https://www.quantskills.ai/">Quantskills 官网</a> · <a href="https://github.com/quantskills/registry">完整 Registry</a> · <a href="data/awesome-quantskills.json">AI 数据</a></p>
 
 > [!IMPORTANT]
 > 本库是研究用途的 **Shadow 精选视图**。它不改变 Registry 准入状态，不代表官方认证，也不构成投资建议。
 
-**28** 项精选 · **25** Skills · **3** Agents · **10** 个分类。当前快照：`sha256:276e68899f6db4a7570a1b13cd84231f94987469343002522270686e52e87091`。
+**28** 项精选 · **25** Skills · **3** Agents · **10** 个分类。当前快照：`sha256:829968af695eff8d2317cac23dec3962046c0acd0ea5c57e332bf46e29725a11`。
 
 ## 快速导航
 
@@ -73,16 +73,16 @@ flowchart LR
 
 项目 | 类型 | Core | B / Q / T | 组内排名 | 简介
 --- | --- | ---: | --- | ---: | ---
-[skill-buffett-moat-screener](https://github.com/quantskills/skill-buffett-moat-screener) | Skill | **82.08** | 99.18 / 91.88 / 38.07 | 1/38 | 按巴菲特式护城河、估值和点时数据筛选 A 股与美股公司并生成研究记录。
-[skill-ag-futures-seasonality](https://github.com/quantskills/skill-ag-futures-seasonality) | Skill | **80.73** | 98.48 / 86.88 / 39.08 | 2/38 | 从农产品期货日线计算各月份历史季节性并叠加作物日历生成可视化报告。
-[skill-futures-hedgecraft](https://github.com/quantskills/skill-futures-hedgecraft) | Skill | **79.70** | 99.82 / 80.62 / 38.55 | 3/38 | 当需要设计、审查或排错期货对冲、期货仓位 sizing、合约移仓、基差/carry 分析、日历价差、保证金压力测试或 CTA 风格期货配置时，使用此 skill。适用于股指期货、商品期货、利率期货和跨期价差场景，重点处理合约乘数、名义本金、保证金、期限结构、交割规则和压力损失。
-[skill-buffett-moat-screener--lavineversion](https://github.com/quantskills/skill-buffett-moat-screener--lavineversion) | Skill | **79.36** | 99.58 / 77.50 / 40.78 | 4/38 | 基于 PandaData 点时证据执行十年资本回报与护城河硬筛选。
-[skill-post-market-screener](https://github.com/quantskills/skill-post-market-screener) | Skill | **79.11** | 98.37 / 80.00 / 39.72 | 5/38 | 收盘后结合技术形态和资金流筛选 A 股股票并生成报告。
-[skill-global-commodity-term-structure](https://github.com/quantskills/skill-global-commodity-term-structure) | Skill | **79.03** | 99.76 / 76.25 / 40.37 | 6/38 | 用公开数据研究海外商品期货期限结构、展期收益和价差。
-[skill-stock-memory-analyzer-usa](https://github.com/quantskills/skill-stock-memory-analyzer-usa) | Skill | **78.78** | 98.79 / 78.12 / 39.41 | 7/38 | 对美国存储芯片股票开展多维度研究分析。
-[skill-hk-us-consensus-revision-radar](https://github.com/quantskills/skill-hk-us-consensus-revision-radar) | Skill | **78.72** | 99.56 / 73.75 / 42.01 | 8/38 | 组织港美股目标价和评级的跨期修订轨迹，并生成研究报告。
-[skill-option-strategy-builder](https://github.com/quantskills/skill-option-strategy-builder) | Skill | **78.49** | 98.44 / 78.12 / 38.97 | 9/38 | 构建期权策略腿组合、损益图、盈亏平衡、希腊字母和保证金分析。
-[skill-index-rebalance-event-study](https://github.com/quantskills/skill-index-rebalance-event-study) | Skill | **78.35** | 98.28 / 78.12 / 38.70 | 10/38 | 围绕指数纳入、剔除和权重调整公告或生效日运行可复现事件研究。
+[skill-buffett-moat-screener](https://github.com/quantskills/skill-buffett-moat-screener) | Skill | **82.08** | 99.18 / 91.88 / 38.07 | 1/37 | 按巴菲特式护城河、估值和点时数据筛选 A 股与美股公司并生成研究记录。
+[skill-ag-futures-seasonality](https://github.com/quantskills/skill-ag-futures-seasonality) | Skill | **80.73** | 98.48 / 86.88 / 39.08 | 2/37 | 从农产品期货日线计算各月份历史季节性并叠加作物日历生成可视化报告。
+[skill-futures-hedgecraft](https://github.com/quantskills/skill-futures-hedgecraft) | Skill | **79.70** | 99.82 / 80.62 / 38.55 | 3/37 | 当需要设计、审查或排错期货对冲、期货仓位 sizing、合约移仓、基差/carry 分析、日历价差、保证金压力测试或 CTA 风格期货配置时，使用此 skill。适用于股指期货、商品期货、利率期货和跨期价差场景，重点处理合约乘数、名义本金、保证金、期限结构、交割规则和压力损失。
+[skill-post-market-screener](https://github.com/quantskills/skill-post-market-screener) | Skill | **79.11** | 98.37 / 80.00 / 39.72 | 4/37 | 收盘后结合技术形态和资金流筛选 A 股股票并生成报告。
+[skill-global-commodity-term-structure](https://github.com/quantskills/skill-global-commodity-term-structure) | Skill | **79.03** | 99.76 / 76.25 / 40.37 | 5/37 | 用公开数据研究海外商品期货期限结构、展期收益和价差。
+[skill-stock-memory-analyzer-usa](https://github.com/quantskills/skill-stock-memory-analyzer-usa) | Skill | **78.78** | 98.79 / 78.12 / 39.41 | 6/37 | 对美国存储芯片股票开展多维度研究分析。
+[skill-hk-us-consensus-revision-radar](https://github.com/quantskills/skill-hk-us-consensus-revision-radar) | Skill | **78.72** | 99.56 / 73.75 / 42.01 | 7/37 | 组织港美股目标价和评级的跨期修订轨迹，并生成研究报告。
+[skill-option-strategy-builder](https://github.com/quantskills/skill-option-strategy-builder) | Skill | **78.49** | 98.44 / 78.12 / 38.97 | 8/37 | 构建期权策略腿组合、损益图、盈亏平衡、希腊字母和保证金分析。
+[skill-index-rebalance-event-study](https://github.com/quantskills/skill-index-rebalance-event-study) | Skill | **78.35** | 98.28 / 78.12 / 38.70 | 9/37 | 围绕指数纳入、剔除和权重调整公告或生效日运行可复现事件研究。
+[skill-etf-fund-evaluator](https://github.com/quantskills/skill-etf-fund-evaluator) | Skill | **78.30** | 98.64 / 75.62 / 40.30 | 10/37 | 评价境内非QDII被动股票指数ETF，并支持同指数横向比较。
 
 <a id="category-04"></a>
 
@@ -119,7 +119,7 @@ flowchart LR
 
 项目 | 类型 | Core | B / Q / T | 组内排名 | 简介
 --- | --- | ---: | --- | ---: | ---
-[skill-backtest-assumption_check](https://github.com/quantskills/skill-backtest-assumption_check) | Skill | **79.74** | 97.07 / 85.62 / 39.19 | 1/4 | 独立的回测假设审计师：对回测代码/策略代码/研究报告按九大维度（成交时点、成本、涨跌停停牌、幸存者、多重比较、数据对齐、换手容量、基准、透明）逐条取证，输出缺陷×证据×严重度×影响×修复清单，配套可运行校验脚本。
+[skill-backtesting-bias-avoidance](https://github.com/quantskills/skill-backtesting-bias-avoidance) | Skill | **74.23** | 91.86 / 75.62 / 37.57 | 1/3 | 构建无前视偏差的回测并审计前视、幸存者、过拟合、成本和样本外检验风险。
 
 <a id="category-08"></a>
 
@@ -162,7 +162,7 @@ Featured 只作附加评价。说明组内排名、来源 publication 和 Shadow
 
 - 权威来源：[`quantskills/registry/evaluations`](https://github.com/quantskills/registry/tree/main/evaluations)
 - 精选策略：`shadow-category-quartile.v1`
-- 公开评分快照摘要：`53178a1362d5946361a73ad5c2384655106a7c93544e6164369ac735299693c0`
+- 公开评分快照摘要：`11555a32bfb812a534918c8a33d72cf22d00cff369bd4ddc6cc7508c03677f97`
 - 精选策略摘要：`c7d2ba0470739c5319ca4011fa2abb8739551fe01beae2113365a3f26ef5f4e2`
 - 本仓库只保存公开脱敏字段，不保存凭据、完整签名信封、模型轨迹或详细安全发现。
 
